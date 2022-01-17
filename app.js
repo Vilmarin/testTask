@@ -1,16 +1,4 @@
 const REVIEWS_ON_PAGE = 10;
-  // запрос с сервера
-   const getResponse= async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    const reviews = await response.json()
-
-    return reviews
-}
-
-// получение массива с данными
-getResponse().then ((res)=> {
-    pagination(res)
-})
 
 // показывать данные на странице
 const showReviews = (arrReviews) => {
@@ -51,3 +39,16 @@ const onClick = ({indexPage,arrReviews}) => {
 
     showReviews(notes)
 }
+
+// запрос с сервера
+const getResponse= async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const reviews = await response.json()
+
+    return reviews
+}
+
+// получение массива с данными
+getResponse().then ((res)=> {
+    pagination(res)
+})

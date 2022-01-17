@@ -1,0 +1,44 @@
+li {
+    list-style-type: none;
+   }
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+   }
+
+.userReview {
+    display: flex;
+    width: 1070px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.userPost {
+    max-width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border:1px solid red;
+}
+
+.userPost_title {
+  padding-bottom: 10px;
+  width: 180px;
+  font-weight: bold;
+}
+
+.pagination {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    border: 1px solid green;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
